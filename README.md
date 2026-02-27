@@ -1,2 +1,2 @@
 # WD-Lab-1
-I am creating a WebDesign
+I am learning web Devlopment
