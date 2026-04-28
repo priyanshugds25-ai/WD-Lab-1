@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iFrame Demo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            background-color: #6968b8;
+            color: white;
+            padding: 10px;
+        }
+
+        .frame {
+            margin: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        iframe {
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML iFrame Demonstration</h1>
+
+<div class="frame">
+    <h3>External Website (Wikipedia)</h3>
+    <iframe src="https://www.wikipedia.org" width="80%" height="300"></iframe>
+</div>
+
+<div class="frame">
+    <h3>Google Map (Nagpur)</h3>
+    <iframe 
+        src="https://www.google.com/maps?q=Nagpur&output=embed"
+        width="80%" height="300">
+    </iframe>
+</div>
+
+</body>
+</html>
