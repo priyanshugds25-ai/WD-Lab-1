@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Features Demo</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f0f2f5;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+        }
+
+        /* Multi-column section */
+        .columns {
+            column-count: 3;
+            column-gap: 20px;
+            padding: 20px;
+        }
+
+        .columns p {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Cards with icons */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 180px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.4s, background 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            background: #e0f7fa;
+        }
+
+        /* Animation box */
+        .animation-box {
+            width: 80px;
+            height: 80px;
+            background: crimson;
+            margin: 20px auto;
+            position: relative;
+            animation: slide 3s infinite alternate;
+        }
+
+        @keyframes slide {
+            from { left: 0; }
+            to { left: 250px; }
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1> Webpage Using  CSS3 Features </h1>
+    <p>Columns | Fonts | Icons | Animation | Transform</p>
+</header>
+
+<!-- Multi-column content -->
+<section class="columns">
+    <p>CSS</p>
+    <p>HTML.</p>
+    <p>Java</p>
+    <p>Python</p>
+    <p>C++</p>
+    <p>SQL</p>
+</section>
+
+<!-- Cards -->
+<section class="cards">
+    <div class="card">
+        <i class="fas fa-heart fa-2x"></i>
+        <h3>Design</h3>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-star fa-2x"></i>
+        <h3>Quality</h3>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-rocket fa-2x"></i>
+        <h3>Speed</h3>
+    </div>
+</section>
+
+<!-- Animation -->
+<div class="animation-box"></div>
+
+<footer>
+    <p>Created CSS3 Project</p>
+</footer>
+
+</body>
+</html>
